@@ -1,0 +1,24 @@
+{
+  "name": "secure-serverless-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rimraf dist && parcel client/index.html",
+    "build": "rimraf dist && netlify-lambda install && parcel build client/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@okta/jwt-verifier": "^1.0.1",
+    "@okta/okta-signin-widget": "3.9",
+    "axios": "^0.19.2",
+    "netlify-lambda": "1.6",
+    "parcel": "1.12"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "3.0"
+  }
+}
